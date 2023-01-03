@@ -8,7 +8,7 @@ import openai
 import pandas as pd
 import streamlit as st
 
-openai.api_key = "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"
+openai.api_key = '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'
 model_engine = "text-davinci-003"
 prompt = 'consigli per la corsa'
 completions = openai.Completion.create(
