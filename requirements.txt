@@ -1,5 +1,4 @@
 
 pandas
 streamlit
-openai
-requests
+openai==0.25.0
