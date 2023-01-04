@@ -11,7 +11,7 @@ import os
 #openai.api_key = os.getenv("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")
 #os.environ["OPENAI_API_KEY"] = "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"
 #openai.api_key = os.environ["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"]
-openai.api_key = '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'
+openai.api_key = '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'
 model_engine = "text-davinci-003"
 prompt = 'consigli per la corsa'
 completions = openai.Completion.create(
