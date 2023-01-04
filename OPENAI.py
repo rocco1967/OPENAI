@@ -22,5 +22,6 @@ completions = openai.Completion.create(
     stop=None,
     temperature=0.9,
 )
-st.write(completions.choices[0].text)
-#message = (completions.choices[0].text)
+
+message = completions.choices[0].text
+st.write(message)
