@@ -13,7 +13,7 @@ import os
 #openai.api_key = os.environ["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"]
 openai.api_key = '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'
 model_engine = "text-davinci-003"
-prompt = 'consigli per la corsa'
+prompt = st.text_input('inserisci la richiesta:')
 completions = openai.Completion.create(
     engine=model_engine,
     prompt=prompt,
