@@ -8,6 +8,9 @@ import openai
 import pandas as pd
 import streamlit as st
 import os
+from PIL import image
+image=Image.open('concierge.JPG')#('sfera.JPG')
+st.image(image)
 #openai.api_key = os.getenv("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")
 #os.environ["OPENAI_API_KEY"] = "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"
 #openai.api_key = os.environ["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"]
