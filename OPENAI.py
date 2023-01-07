@@ -32,4 +32,4 @@ if prompt is not None:
    message = completions.choices[0].text
    st.write(message)
 else :
-    st.write(inserisci la richiesta)    
+    st.write('inserisci la richiesta')    
