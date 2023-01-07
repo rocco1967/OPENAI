@@ -21,11 +21,11 @@ openai.api_key=st.secrets['OPEN_APY_KEY']
 #openai.api_key = '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'
 model_engine = "text-davinci-003"
 prompt =st.text_input('inserisci la richiesta:','ciao come stai' )
-if prompt is not None:
-    completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=256,n=1, stop=None,temperature=0.9,)
-    message =(completions.choices[0].text)
-    st.write(message)
-else:
-    st.write('inserisci la richiesta')
+#if prompt is not None:
+completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=256,n=1, stop=None,temperature=0.9,)
+message =(completions.choices[0].text)
+st.write(message)
+#else:
+    #st.write('inserisci la richiesta')
 
     
