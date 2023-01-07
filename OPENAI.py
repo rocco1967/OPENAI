@@ -11,7 +11,7 @@ import os
 from PIL import Image
 st.header('.....................My name is Ambrose..................')
 st.subheader('.............................I^m here to serve you...........................')
-st.subheader('are an advanced neural network specialized in responding in natural language')
+st.subheader('I am an advanced neural network specialized in responding in natural language')
 image=Image.open('concierge.JPG')#('sfera.JPG')
 image = image.resize((1000, 400))
 st.image(image)
