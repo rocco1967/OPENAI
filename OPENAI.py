@@ -23,9 +23,9 @@ model_engine = "text-davinci-003"
 prompt =st.text_input('inserisci la richiesta:')
 if prompt is not None:
     completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=256,n=1, stop=None,temperature=0.9,)
-   message =(completions.choices[0].text)
-   st.write(message)
+    message =(completions.choices[0].text)
+    st.write(message)
 else:
-   st.write('inserisci la richiesta')
+    st.write('inserisci la richiesta')
 
     
