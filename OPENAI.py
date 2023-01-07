@@ -10,7 +10,7 @@ import streamlit as st
 import os
 from PIL import Image
 st.header('.....................My name is Ambrose..................')
-st.subheader(...........................'I^m here to serve you'................................)
+st.subheader('...........................I^m here to serve you................................')
 image=Image.open('concierge.JPG')#('sfera.JPG')
 image = image.resize((1000, 400))
 st.image(image)
