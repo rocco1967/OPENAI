@@ -31,4 +31,5 @@ completions = openai.Completion.create(
 if prompt is not None:
    message = completions.choices[0].text
    st.write(message)
-else st.write(inserisci la richiesta)    
+else :
+    st.write(inserisci la richiesta)    
