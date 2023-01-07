@@ -27,8 +27,8 @@ completions = openai.Completion.create(
     max_tokens=256,
     n=1,
     stop=None,
-    temperature=0.9,
-)
-
-message = completions.choices[0].text
-st.write(message)
+    temperature=0.9,)
+if prompt is not None:
+   message = completions.choices[0].text
+   st.write(message)
+else st.write('inserisci la richiesta')    
