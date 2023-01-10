@@ -33,5 +33,5 @@ if st.button('RUN'):
 #else:
     #st.write('inserisci la richiesta')
 #text_contents = (message)
-st.download_button('download the answer on your PC....',(completions.choices[0].text))
+st.download_button('download the result on your PC.. After first sloping Run....',(completions.choices[0].text))
     
