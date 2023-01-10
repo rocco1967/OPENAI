@@ -20,7 +20,7 @@ st.image(image)
 #openai.api_key = os.environ["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"]
 openai.api_key=st.secrets['OPEN_APY_KEY']
 #openai.api_key = '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'
-model_engine ="text-curie-001"# "text-davinci-003"
+model_engine ="text-davinci-003"#text-curie-001"# "text-davinci-003"
 prompt =st.text_area('inserisci la richiesta:','ciao come stai' )
 #if prompt is not None:
 completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=1024,n=1, stop=None,
