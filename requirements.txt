@@ -3,3 +3,4 @@ pandas
 streamlit
 openai==0.25.0
 pyttsx3
+py-espeak-ng
