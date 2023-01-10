@@ -32,11 +32,6 @@ if st.button('RUN'):
     st.write(message)
 #else:
     #st.write('inserisci la richiesta')
-import pyttsx3  
-engine = pyttsx3.init()
-#engine.setProperty('volume',1.0)
-#engine.setProperty('age',30)
-#engine.setProperty('rate', 115)
-#engine.setProperty('language', 'polish')
-
+text_contents = '''message'''
+st.download_button('Download some text', text_contents)
     
