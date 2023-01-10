@@ -25,7 +25,9 @@ prompt =st.text_area('inserisci la richiesta:','ciao come stai' )
 #if prompt is not None:
 completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=1024,n=1, stop=None,top_p=1,)#top_p=1
 message =(completions.choices[0].text)#
-st.write(message)
+#st.write(message)
+if st.button('RUN'):
+    st.write('message)
 #else:
     #st.write('inserisci la richiesta')
 
