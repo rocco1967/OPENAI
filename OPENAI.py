@@ -33,10 +33,10 @@ if st.button('RUN'):
 #else:
     #st.write('inserisci la richiesta')
 import pyttsx3  
-engine = pyttsx3.init()
-engine.setProperty('volume',1.0)
-engine.setProperty('age',30)
-engine.setProperty('rate', 115)
-engine.setProperty('language', 'polish')
+#engine = pyttsx3.init()
+#engine.setProperty('volume',1.0)
+#engine.setProperty('age',30)
+#engine.setProperty('rate', 115)
+#engine.setProperty('language', 'polish')
 
     
