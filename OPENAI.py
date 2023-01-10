@@ -35,7 +35,7 @@ if st.button('RUN'):
 import pyttsx3  
 engine = pyttsx3.init()
 engine.setProperty('volume',1.0)
-engine.setProperty('age',90)
+engine.setProperty('age',30)
 engine.setProperty('rate', 115)
 engine.setProperty('language', 'polish')
 
