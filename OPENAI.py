@@ -27,7 +27,7 @@ completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tok
 message =(completions.choices[0].text)#
 #st.write(message)
 if st.button('RUN'):
-    st.write('message')
+    st.write(message)
 #else:
     #st.write('inserisci la richiesta')
 
