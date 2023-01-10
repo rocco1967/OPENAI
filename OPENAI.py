@@ -32,6 +32,6 @@ if st.button('RUN'):
     st.write(message)
 #else:
     #st.write('inserisci la richiesta')
-text_contents = (message)
-st.download_button('Download some text', text_contents)
+#text_contents = (message)
+st.download_button('Download some text', message)
     
