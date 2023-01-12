@@ -8,6 +8,7 @@ import openai
 import pandas as pd
 import streamlit as st
 import os
+import numpy as np
 from PIL import Image
 st.header('.....................My name is Ambrose..................')
 st.subheader('.............................I^m here to serve you...........................')
