@@ -28,7 +28,7 @@ import speech_recognition as sr
 audio_bytes = audio_recorder()####
 if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
-audio=  st.audio(audio_bytes, format="audio/wav")   
+
 
     
     
