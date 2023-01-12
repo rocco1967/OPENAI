@@ -32,7 +32,7 @@ if audio_bytes:######
 #st.write(audio_bytes)    
     
     
-prompt =st.text_area()
+prompt =st.text_area('inserisci la richiesta')
 #if prompt is not None:
 completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=1024,n=1, stop=None,
                                       frequency_penalty=0.0,temperature=0.5,)#top_p=1
