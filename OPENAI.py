@@ -26,7 +26,7 @@ from audio_recorder_streamlit import audio_recorder#####
 audio_bytes = audio_recorder()####
 if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
-    st.write(audio_bytes)
+    #st.write(audio_bytes)
 prompt =st.text_area('inserisci la richiesta:' )
 #if prompt is not None:
 completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=1024,n=1, stop=None,
