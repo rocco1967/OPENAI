@@ -9,4 +9,4 @@ py-espeak-ng
 audio-recorder-streamlit
 SpeechRecognition
 git+https://github.com/openai/whisper.git 
-ffmpeg-python
+
