@@ -47,3 +47,4 @@ audio_bytes = audio_recorder()####
 if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
     
+import whisper
