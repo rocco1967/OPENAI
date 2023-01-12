@@ -55,7 +55,7 @@ st.text('language recognition model loaded')
 if st.button('TRANSCRIBE FILE'):
     if audio_file is not None:
         st.success('TRANSCRIBENG FILE')
-        transcription=model.transcribe(np.ndarray(audio_file))
+        transcription=model.transcribe((audio_file.name))
         st.success('TRANSCRIPTION COMPLETE')
         st.markdown(transcription['text'])
     else:
