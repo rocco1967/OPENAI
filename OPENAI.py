@@ -23,14 +23,7 @@ openai.api_key=st.secrets['OPEN_APY_KEY']
 model_engine ="text-davinci-003"#text-curie-001"# "text-davinci-003"
 
 
-from audio_recorder_streamlit import audio_recorder#####
-import speech_recognition as sr
-audio_bytes = audio_recorder()####
-if audio_bytes:######
-    st.audio(audio_bytes, format="audio/wav")######
-#audio_file = open(st.audio('audio_bytes'))
-#st.write(audio_bytes)    
-    
+
     
 prompt =st.text_area('inserisci la richiesta')
 #if prompt is not None:
@@ -45,4 +38,12 @@ if st.button('RUN'):
     #st.write('inserisci la richiesta')
 #text_contents = (message)
 st.download_button('download the result on your PC.. After first sloping Run....',(completions.choices[0].text))
+
+
+
+from audio_recorder_streamlit import audio_recorder#####
+import speech_recognition as sr
+audio_bytes = audio_recorder()####
+if audio_bytes:######
+    st.audio(audio_bytes, format="audio/wav")######
     
