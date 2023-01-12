@@ -8,4 +8,4 @@ streamlit-webrtc
 audio-recorder-streamlit
 SpeechRecognition
 git+https://github.com/openai/whisper.git 
-apt install ffmpeg
+ffmpeg-python
