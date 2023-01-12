@@ -30,7 +30,7 @@ if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
 audio=  st.audio(audio_bytes, format="audio/wav")   
 r = sr.Recognizer()    
-with sr.AudioFile(audio) as source:
+with sr.AudioFile('audio.waw') as source:
     audio_text = r.listen(source)
 # recoginize_() method will throw a request error if the API is unreachable, hence using exception handling
     try:
