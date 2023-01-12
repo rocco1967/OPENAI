@@ -21,6 +21,11 @@ st.image(image)
 openai.api_key=st.secrets['OPEN_APY_KEY']
 #openai.api_key = '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'
 model_engine ="text-davinci-003"#text-curie-001"# "text-davinci-003"
+from audio_recorder_streamlit import audio_recorder#####
+
+audio_bytes = audio_recorder()####
+if audio_bytes:######
+    st.audio(audio_bytes, format="audio/wav")######
 prompt =st.text_area('inserisci la richiesta:' )
 #if prompt is not None:
 completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=1024,n=1, stop=None,
