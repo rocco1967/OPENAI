@@ -48,4 +48,6 @@ if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
     
 import whisper
-audio_file= st.file_uploader('upload Audio',type['wav','mp3','m4a])
+audio_file= st.file_uploader('upload Audio',type['wav','mp3','m4a'])
+model = whisper.load_model('base')
+st.text('whisper model loaded')
