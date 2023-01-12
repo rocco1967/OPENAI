@@ -48,18 +48,18 @@ audio_bytes = audio_recorder()####
 if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
     
-import whisper
-audio_file= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
-model = whisper.load_model('base')
-st.text('language recognition model loaded')
-if st.button('TRANSCRIBE FILE'):
-    if audio_file is not None:
-        st.success('TRANSCRIBENG FILE')
+#import whisper############################################################################
+#audio_file= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
+#model = whisper.load_model('base')
+#st.text('language recognition model loaded')
+#if st.button('TRANSCRIBE FILE'):
+    #if audio_file is not None:
+        #st.success('TRANSCRIBENG FILE')
         #audio_bytes = audio_file.read()#####
-        transcription=model.transcribe((audio_file.name))####
-        st.success('TRANSCRIPTION COMPLETE')
-        st.markdown(transcription['text'])
-    else:
-        st.error('PLEASE UPLOAD FILE')
-st.header('Play Original File')
-st.audio(audio_file)
+        #transcription=model.transcribe((audio_file.name))####
+        #st.success('TRANSCRIPTION COMPLETE')
+        #st.markdown(transcription['text'])
+    #else:
+        #st.error('PLEASE UPLOAD FILE')
+#st.header('Play Original File')
+#st.audio(audio_file)
