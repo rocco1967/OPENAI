@@ -21,12 +21,28 @@ st.image(image)
 openai.api_key=st.secrets['OPEN_APY_KEY']
 #openai.api_key = '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'
 model_engine ="text-davinci-003"#text-curie-001"# "text-davinci-003"
-from audio_recorder_streamlit import audio_recorder#####
 
+
+from audio_recorder_streamlit import audio_recorder#####
+import speech_recognition as sr
 audio_bytes = audio_recorder()####
 if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
-    #st.write(audio_bytes)
+audio=  st.audio(audio_bytes, format="audio/wav")   
+r = sr.Recognizer()    
+with sr.AudioFile(audio) as source:
+    audio_text = r.listen(source)
+# recoginize_() method will throw a request error if the API is unreachable, hence using exception handling
+    try:
+        # using google speech recognition
+        text = r.recognize_google(audio_text)
+        st.write('Converting audio transcripts into text ...')
+        st.write(text)
+    except:
+         st.write('Sorry.. run again...')#######    
+    
+    
+    
 prompt =st.text_area('inserisci la richiesta:' )
 #if prompt is not None:
 completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=1024,n=1, stop=None,
