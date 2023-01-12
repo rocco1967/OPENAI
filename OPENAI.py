@@ -29,7 +29,7 @@ audio_bytes = audio_recorder()####
 if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
 #audio_file = open(st.audio('audio_bytes'))
-st.write(audio_bytes)    
+#st.write(audio_bytes)    
     
     
 prompt =st.text_area('inserisci la richiesta:' )
