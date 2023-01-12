@@ -6,3 +6,4 @@ pyttsx3
 py-espeak-ng
 streamlit-webrtc
 audio-recorder-streamlit
+SpeechRecognition
