@@ -28,8 +28,8 @@ model_engine ="text-davinci-003"#text-curie-001"# "text-davinci-003"
     
 prompt =st.text_area('inserisci la richiesta')
 #if prompt is not None:
-completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=512,n=1, stop=None,
-                                      frequency_penalty=0.0,temperature=0.0,)#top_p=1
+completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=2024,n=1, stop=None,
+                                      frequency_penalty=0.0,temperature=0.5,)#top_p=1
 #message =(completions.choices[0].text)#
 #st.write(message)
 if st.button('RUN'):
