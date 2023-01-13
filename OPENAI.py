@@ -42,11 +42,11 @@ st.download_button('download the result on your PC.. After first sloping Run....
 
 
 
-from audio_recorder_streamlit import audio_recorder#####
-import speech_recognition as sr
-audio_bytes = audio_recorder()####
-if audio_bytes:######
-    st.audio(audio_bytes, format="audio/wav")######
+#from audio_recorder_streamlit import audio_recorder#####
+#import speech_recognition as sr
+#audio_bytes = audio_recorder()####
+#if audio_bytes:######
+    #st.audio(audio_bytes, format="audio/wav")######
     
 #import whisper############################################################################
 files= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
