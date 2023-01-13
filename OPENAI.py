@@ -58,7 +58,8 @@ bytes_data = files.read()  # read the content of the file in binary
 print(files.name, bytes_data)
 with open(os.path.join("/tmp", files.name), "wb") as f:
     f.write(bytes_data)  # write this content elsewhere
-    
+with open(os.path("/tmp","r") as r:
+          st.download_button(data=r)
 #model = whisper.load_model('base')
 #st.text('language recognition model loaded')
 #if st.button('TRANSCRIBE FILE'):
