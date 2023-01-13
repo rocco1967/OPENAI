@@ -49,7 +49,15 @@ if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
     
 #import whisper############################################################################
-#audio_file= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
+audio_file= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
+if len(files) == 0:
+    st.error("No file were uploaded")
+
+for i in range(len(files)):
+    bytes_data = files[i].read()  # read the content of the file in binary
+    print(files[i].name, bytes_data)
+    with open(os.path.join("/tmp", files[i].name), "wb") as f:
+        f.write(bytes_data)  # write this content elsewhere
 #model = whisper.load_model('base')
 #st.text('language recognition model loaded')
 #if st.button('TRANSCRIBE FILE'):
