@@ -60,7 +60,7 @@ a=files.name
 with open(os.path.join("/tmp", files.name), "wb") as f:
     f.write(bytes_data)  # write this content elsewhere
 with open(os.path.join("/tmp",a),"rb") as r:
-    st.audio(r, format='audio/mp3')
+    st.audio(r, format='audio/m4a')
     #st.download_button('data',data=r)
 #model = whisper.load_model('base')
 #st.text('language recognition model loaded')
