@@ -49,7 +49,7 @@ if audio_bytes:######
     st.audio(audio_bytes, format="audio/wav")######
     
 #import whisper############################################################################
-audio_file= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
+files= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
 if len(files) == 0:
     st.error("No file were uploaded")
 
