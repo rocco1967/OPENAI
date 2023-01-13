@@ -50,8 +50,8 @@ if audio_bytes:######
     
 #import whisper############################################################################
 files= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
-#if len(files) == 0:
-   #st.error("No file were uploaded")
+if files is None:
+    st.error("No file were uploaded")
 
 #for i in range(len(files)):
 bytes_data = files.read()  # read the content of the file in binary
