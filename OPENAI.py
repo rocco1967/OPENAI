@@ -55,9 +55,10 @@ files= st.file_uploader('upload Audio',type=['wav','mp3','m4a'])
 
 #for i in range(len(files)):
 bytes_data = files.read()  # read the content of the file in binary
-print(files.name, bytes_data)
+st.write((files.name, bytes_data))
 with open(os.path.join("/tmp", files.name), "wb") as f:
     f.write(bytes_data)  # write this content elsewhere
+    
 #model = whisper.load_model('base')
 #st.text('language recognition model loaded')
 #if st.button('TRANSCRIBE FILE'):
