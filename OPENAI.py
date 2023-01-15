@@ -21,13 +21,13 @@ st.success('gianfranco.fa@gmail.com')
 #openai.api_key = os.getenv("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")
 #os.environ["OPENAI_API_KEY"] = "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"
 #openai.api_key = os.environ["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"]
-openai.api_key=st.secrets['OPEN_APY_KEY']
+#openai.api_key=st.secrets['OPEN_APY_KEY']
 #openai.api_key = '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'#
 #model_engine ="text-davinci-003"#text-curie-001"# "text-davinci-003"
 model_engine = st.radio(
     "scegli il modello AI",
-    ('text_davinci-002', 'text-davinci-003', 'code-davinci-002','code-cushman-001','text-curie-001'))
-
+    ('text-davinci-002', 'text-davinci-003', 'code-davinci-002','code-cushman-001','text-curie-001'))
+openai.api_key=st.secrets['OPEN_APY_KEY']
 
 
     
