@@ -16,6 +16,7 @@ st.subheader('I am an advanced neural network specialized in responding in natur
 image=Image.open('concierge.JPG')#('sfera.JPG')
 image = image.resize((1000, 400))
 st.image(image)
+st.suheader('To keep the service active and pay OPENAI.com make a small donation with PayPal.. Thank you')
 st.success('gianfranco.fa@gmail.com')
 #openai.api_key = os.getenv("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")
 #os.environ["OPENAI_API_KEY"] = "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"
