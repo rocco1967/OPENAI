@@ -27,6 +27,7 @@ st.success('gianfranco.fa@gmail.com')
 
 st.subheader('For use and explanation models read this:')
 st.success('https://beta.openai.com/docs/models/overview')
+st.subheader('text-davinci-003 IS THE ENGINE OF CHATGPT')
 model_engine = st.radio(
     "CHOOSE THE MODEL OF A.I.",
     ('text-davinci-002', 'text-davinci-003', 'code-davinci-002','code-cushman-001','text-curie-001','text-ada-001'))
