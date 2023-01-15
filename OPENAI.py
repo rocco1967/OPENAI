@@ -37,7 +37,7 @@ openai.api_key=st.secrets['OPEN_APY_KEY']
     
 prompt =st.text_area('YOUR REQUEST:')
 #if prompt is not None:
-completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=512,n=1, stop=None,
+completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_lenth=51,n=1, stop=None,
                                       frequency_penalty=0.0,temperature=0.5,)#top_p=1
 #message =(completions.choices[0].text)#
 #st.write(message)
