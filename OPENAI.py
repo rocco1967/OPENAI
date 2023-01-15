@@ -24,6 +24,8 @@ st.success('gianfranco.fa@gmail.com')
 #openai.api_key=st.secrets['OPEN_APY_KEY']
 #openai.api_key = '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'#
 #model_engine ="text-davinci-003"#text-curie-001"# "text-davinci-003"
+
+st.subHeader('for use and explanation of models',st.success('https://beta.openai.com/docs/models/overview'))
 model_engine = st.radio(
     "CHOOSE THE MODEL OF A.I.",
     ('text-davinci-002', 'text-davinci-003', 'code-davinci-002','code-cushman-001','text-curie-001','text-ada-001'))
