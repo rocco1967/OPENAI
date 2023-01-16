@@ -61,24 +61,5 @@ st.download_button('download the result on your PC.. After first sloping Run....
 
 
 
-#from audio_recorder_streamlit import audio_recorder#####
-#import speech_recognition as sr
-#audio_bytes = audio_recorder()####
-#if audio_bytes:######
-    #st.audio(audio_bytes, format="audio/wav")######
-    
-#import whisper############################################################################
 
-#model = whisper.load_model('base')
-#st.text('language recognition model loaded')
-#if st.button('TRANSCRIBE FILE'):
-    #if audio_file is not None:
-        #st.success('TRANSCRIBENG FILE')
-        #audio_bytes = audio_file.read()#####
-        #transcription=model.transcribe((audio_file.name))####
-        #st.success('TRANSCRIPTION COMPLETE')
-        #st.markdown(transcription['text'])
-    #else:
-        #st.error('PLEASE UPLOAD FILE')
-#st.header('Play Original File')
-#st.audio(audio_file)
+
