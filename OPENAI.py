@@ -16,7 +16,7 @@ st.subheader('I am an advanced neural network specialized in responding in natur
 image=Image.open('concierge.JPG')#('sfera.JPG')
 image = image.resize((1000, 400))
 st.image(image)
-st.subheader('To keep the service active and pay OPENAI.com make a small donation with PayPal.. Thank you')
+st.subheader('To keep the service active make a small donation with PayPal.. Thank you')
 st.success('gianfranco.fa@gmail.com')
 #openai.api_key = os.getenv("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")
 #os.environ["OPENAI_API_KEY"] = "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"
@@ -48,7 +48,7 @@ openai.api_key=st.secrets['OPEN_APY_KEY']
 prompt =st.text_area('YOUR REQUEST:')
 #if prompt is not None:
 completions = openai.Completion.create(engine=model_engine,prompt=prompt,max_tokens=1024,n=1, stop=None,
-                                      frequency_penalty=0.0,temperature=0.5,)#top_p=1
+                                      frequency_penalty=0.0,temperature=0.0,)#top_p=1
 #message =(completions.choices[0].text)#
 #st.write(message)
 if st.button('RUN'):
